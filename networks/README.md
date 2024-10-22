@@ -30,5 +30,5 @@ We also provide a small example dataset.
 * **read_and_print_networks.m** reads the matlab files and prints them to text files that can be read in R or other languages.
 * **combine_networks.R** merges the separate LIONESS networks into one large matrix with samples as columns and edges as rows.
 * **calculate_degree.R** calculates the indegree and outdegree of the LIONESS networks. 
-* **read_and_print_networks.sh**, **combine_networks.sh** and **calculate_degree.sh** and wrappers for the matlb and r scripts with the same names and can be run from the command line.
+* **read_and_print_networks.sh**, **combine_networks.sh** and **calculate_degree.sh** and wrappers for the matlab and r scripts with the same names and can be run from the command line.
 * **read_combine_degree.sh** is a wrapper script that calls `read_and_print_networks.m`, `combine_networks.R` and `calculate_degree.R` in sequence.
