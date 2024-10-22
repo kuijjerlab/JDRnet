@@ -5,19 +5,23 @@ This workflow generates single sample PANDA-LIONESS GRNs using a matlab implemen
 We also provide a small example dataset.
 
 ## Quick start
-1. Edit the input file names and paths in `panda_config.m`
-
-2. Run the `panda_run.sh` script from the command line using `nohup bash panda_run.sh &`. 
+1. Prepare the data by running the `log_transform_count.r` and `prepare_data_for_lioness.r`.
    
-3. Edit the `lioness_config.m` file with the correct paths and file names.
+2. Edit the input file names and paths in `panda_config.m`
 
-4. Run the `lioness_run.sh` script from the command line using `nohup bash lioness_run.sh x y &`. `x` and `y` should be the first and last samples that LIONESS should be run for, respectively. To run on all samples, use `x=1 y=-1`. 
+3. Run the `panda_run.sh` script from the command line using `nohup bash panda_run.sh &`. 
+   
+4. Edit the `lioness_config.m` file with the correct paths and file names.
 
-5. Run the `read_combine_degree.sh` script to combine the LIONESS networks into one file and calculate the in and out degrees.
+5. Run the `lioness_run.sh` script from the command line using `nohup bash lioness_run.sh x y &`. `x` and `y` should be the first and last samples that LIONESS should be run for, respectively. To run on all samples, use `x=1 y=-1`. 
 
-6. after running all of these, you can delete the `.mat` files in `output` and `mat`, the `.txt` files in `txt`, and `net.RData` and `edges.RData` to save space
+6. Run the `read_combine_degree.sh` script to combine the LIONESS networks into one file and calculate the in and out degrees.
+
+7. after running all of these, you can delete the `.mat` files in `output` and `mat`, the `.txt` files in `txt`, and `net.RData` and `edges.RData` to save space
 
 ## Description of the workflow scripts
+* **log_transform_count.r** log2 transforms count data (mRNA & miRNA expression).
+* **prepare_data_for_lioness.r** Converts gene names from entrez IDs to gene symbols and overlaps the genes in the expression data with the protein-protein interaction prior and the PANDA prior. Newer implementations of PANDA do this automatically, however it is best practice to do it beforehand.
 * **panda_config.m** and **lioness_config.m** are configuration files for the PANDA and LIONESS tools and are the only files that should be edited.
 * **panda_run.sh** is a wrapper script for `panda_run.m` that can be run from the command line with `nohup bash panda_run.sh &`. It will also output a log file.
 * **panda_run.m** will run PANDA on all samples and store the output in the directory `mat`.
