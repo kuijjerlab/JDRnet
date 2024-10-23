@@ -4,6 +4,8 @@ This is a repository for reproducing the analysis in the paper: *title + doi*
 ## Data availability and reproducibility
 All data used can be found on Zenodo at *link + doi*. A small example dataset is provided here for the GRN inference. We also provide a container with the environment used for this analysis for reproducibility, which can be downloaded from *link*.
 
+The code used to download the data can be found in the `download_data` directory.
+
 ## PANDA-LIONESS network inference
 The PANDA-LIIONESS networks were generated using the workflow found in the **networks** directory in this repository. A small example dataset is also provided, along with a separate README.
 
