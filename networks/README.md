@@ -18,6 +18,8 @@ We also provide a small example dataset.
 6. Run the `read_combine_degree.sh` script to combine the LIONESS networks into one file and calculate the in and out degrees.
 
 7. after running all of these, you can delete the `.mat` files in `output` and `mat`, the `.txt` files in `txt`, and `net.RData` and `edges.RData` to save space
+   
+8. Run the `prepare_data_files.r` script to split the indegree and outdegree into separate files.
 
 ## Description of the workflow scripts
 * **log_transform_count.r** log2 transforms count data (mRNA & miRNA expression).
@@ -32,3 +34,4 @@ We also provide a small example dataset.
 * **calculate_degree.R** calculates the indegree and outdegree of the LIONESS networks. 
 * **read_and_print_networks.sh**, **combine_networks.sh** and **calculate_degree.sh** and wrappers for the matlab and r scripts with the same names and can be run from the command line.
 * **read_combine_degree.sh** is a wrapper script that calls `read_and_print_networks.m`, `combine_networks.R` and `calculate_degree.R` in sequence.
+* **prepare_data_files.r** splits the indegree and outdegree into separate `.RData` files for ease of use for sownstream analysis.
