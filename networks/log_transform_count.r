@@ -1,3 +1,8 @@
+###############################################################################
+###### This script uses the log2matrix.R script published in the GitHub #######
+#################### repository cantinilab/momix-notebook #####################
+###############################################################################
+
 library(data.table)
 setwd("/storage/kuijjerarea/romana/TCGAmofa/cantini_benchmark/momix-notebook")
 
