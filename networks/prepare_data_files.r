@@ -12,10 +12,7 @@ for (i in cancers) {
     print(i)
     # load data
     load(paste0(wd, i, "/degree.RData"))
-    #load(paste0(wd, "lioness/degree.RData"))
 
     save(indegree, file = paste0(wd, i, "/indegree.RData"))
     save(outdegree, file = paste0(wd, i, "/outdegree.RData"))
-    #save(indegree, file = paste0(wd, "indegree.RData"))
-    #save(outdegree, file = paste0(wd, "outdegree.RData"))
 }
