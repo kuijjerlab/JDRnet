@@ -1,5 +1,5 @@
 # JDRnet
-This is a repository for reproducing the analysis in the paper: *title + doi*
+This is a repository for reproducing the analysis in the paper: ***Gene regulatory network integration with multi-omics data enhances survival predictions in cancer*** *citation*
 
 ## Data availability and reproducibility
 All data used can be found on Zenodo at *link + doi*. A small example dataset is provided here for the GRN inference. We also provide a container with the environment used for this analysis for reproducibility, which can be downloaded from *link*.
