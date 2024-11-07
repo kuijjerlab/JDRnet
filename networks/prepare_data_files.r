@@ -4,9 +4,8 @@ rm(list = ls())
 wd <- "/storage/kuijjerarea/romana/TCGAmofa/cantini_benchmark/momix-notebook/data/cancer/"
 #wd <- "/storage/kuijjerarea/romana/TCGAmofa/june_2024_run/liver_val_old/"
 
-#cancers <- c("aml", "breast", "colon", "gbm", "kidney", "liver", "lung",
-#            "melanoma", "ovarian", "sarcoma")
-cancers <- "breast"
+cancers <- c("aml", "breast", "colon", "gbm", "kidney", "liver", "lung",
+            "melanoma", "ovarian", "sarcoma")
 
 for (i in cancers) {
     print(i)
