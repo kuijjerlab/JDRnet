@@ -6,3 +6,6 @@ The TCGA data was downloaded from [MOMIX](https://github.com/cantinilab/momix-no
 
 ## GEPliver data
 Data was also downloaded from GEP-liver^1^ using the `get_gep_liver.sh` script. The `gep_data_process.r` script concatenates all the files. This dataset was used to validate the findings in the liver cancer dataset from MOMIX. Part of the data in GEP liver originates from TCGA, as does the MOMIX data. Therefore, the `gep_data_process.r` script also ensures that any TCGA samples found in the MOMIX dataset are excluded from this one. 
+
+## References
+1. Li, Z., Zhang, H., Li, Q. et al. GepLiver: an integrative liver expression atlas spanning developmental stages and liver disease phases. Sci Data 10, 376 (2023). https://doi.org/10.1038/s41597-023-02257-1
