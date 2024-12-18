@@ -11,4 +11,4 @@ This is a quick installation guide for the container that can be used to reprodu
 
 ***Note: /folder/to/bind should be the path to the directory containing all the data & notebooks needed as you will only be able to access this folder from within the container.***
 
-This should give you the option to open jupyter lab in your browser. Open the notebook you wish to run. you will have to set the correct kernel. To do so, from the menu bar, select ```Kernel > Change kernel``` and select the R kernel. You should now be able to run the notebook. 
+This should give you the option to open Jupyter Lab in your browser. Open the notebook you wish to run. You will have to set the correct kernel. To do so, from the menu bar, select ```Kernel > Change kernel``` and select the R kernel. You should now be able to run the notebook. For a quick guide to using Jupyter notebooks in Jupyter lab, see `Jupyter_notebook_guide.html`. 
