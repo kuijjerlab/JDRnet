@@ -16,4 +16,4 @@ The remainder of the analysis is documented in the notebook `JDR_net.ipynb` foun
   
 ## MARMOT tool
 Most of the analysis detailed in `JDR_net.ipynb` was performed with the MARMOT tool, which can be found in the repository below:
-https://github.com/rtpop/MARMOT
+https://github.com/kuijjerlab/MARMOT
